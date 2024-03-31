@@ -1,0 +1,31 @@
+{
+    "resume": [
+        {
+            "workplace": "Siav arkitekt AB",
+            "role": "Projektör",
+            "description": "Arbetat på Privata byggnader, hanterat A- samt K-ritningar Assisterade Projektledare med rapporter, kostnadsberäkningar och tidtabeller", 
+            "date": "2020 - 2022"
+        },
+        {
+            "workplace": "Smederna Sverige AB",
+            "role": "Projektleader/ Tekla ritare",
+            "description": "Hanterat total entreprenad & general entreprenad. Modellerat diverse stål byggnader & anläggningar. Framställande av 3D-, assembly-, plåt- & profil ritningar. Haft hand om, inklusive framställt leveranslista, kaplista, följesedel-certifikat, infästningsmaterial. Har goda egenskaper inom NCfiler och framställande av spec filer.",
+            "date": "2018 - 2020"
+        },
+        {
+            "education": "VVS examen",
+            "school": "Torekällgymnasiet",
+            "date": "2013-2016"
+        },
+        {
+            "education": "Byggnads ingenjör examen",
+            "school": "EC utbildning",
+            "date": "2019 - 2021"
+        },
+        {
+            "education": "Fullstack Utvecklare.Net",
+            "school": "Chas Academy",
+            "date": "2023 - 2025"
+        }
+    ]
+}

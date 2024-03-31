@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(pictures/b.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 8%
+}
+
+#logo {
+  color: white;
+  font-size: 35px;
+}
+
+#logo span{
+  color: aqua;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header ul li {
+  background-color: aliceblue;
+  padding: 1em 1.5em
+}
+
+a.active {
+  color: black;
+  background-color: aquamarine;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.github-btn:hover {
+  transform: scale(1.1);
+}
+
+header .github-btn {
+  background-color: aquamarine;
+  color: black;
+  padding: 10px 25px;
+  border: 2px solid blue;
+  border-radius: 30px;
+  transition: transform .4s;
+}
+
+nav .github-btn {
+  display: none;
+}
+
+.ham-menu {
+  color: white;
+  display: none;
+}
+
+@media (max-width: 730px) {
+  .fa-solid {
+      cursor: pointer;
+  }
+
+  .ham-menu {
+      display: block;
+      z-index: 1;
+      position: absolute;
+      right: 5%;
+      font-size: 20px;
+  }
+
+  .menu {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 100%;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, .8);
+      transition: all .5s ease-in-out;
+  }
+
+  #nav-toggle:checked~.menu {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding-top: 6em;
+      bottom: 0;
+  }
+
+  header .github-btn {
+      display: none;
+  }
+
+  nav .github-btn {
+      display: inline-block;
+  }
+}
+
+main h1{
+  color: white;
+}
+
+main{
+  text-align: center;
+  min-height:75vh;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 80vh;
+}
+
+.resume-container {
+  position: absolute; 
+  top: 60px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 70%;
+  bottom: 100px;
+  overflow-y: scroll; 
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume {
+  text-align: left;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 22em;
+  height: 25%;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px;
+}
+
+
+.card article {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.button {
+  padding: 5em;
+  background-color: blueviolet;
+  color: whitesmoke;
+  padding: 10px 25px;
+  border: 2px solid white;
+  border-radius: 30px;
+  transition: transform .4s;
+  margin-top: 1em;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: white;
+  color: blue;
+}
+
+.popup {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 20%;
+  left: 8%;
+  padding: 2% 2% 5% 2%;
+  width: 80%;
+  text-align: center;
+  background: white;
+  transition: opacity 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup p {
+  width: 50%;
+}
+
+.popup-head {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.pageArticle{
+  color: white;
+  max-width:50vw;
+  padding: 2em 0;
+  margin: auto;
+}
+
+.articleSection{
+  text-align: center;
+}
+
+.Lorem {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  right: 100px;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.Lorem {
+  margin: 0 0 10px; /* Justera vid behov */
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  min-height: 15vh;
+}
+
+.rse-title{
+  color: aqua;
+}
